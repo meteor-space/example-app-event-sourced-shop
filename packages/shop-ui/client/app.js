@@ -1,5 +1,8 @@
 Shop = Space.ui.Application.define('Shop', {
 
-  RequiredModules: ['Space.ui']
+  RequiredModules: [
+    'Space.ui',
+    'Space.cqrs.debug'
+  ]
 
 });

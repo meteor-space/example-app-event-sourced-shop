@@ -10,7 +10,9 @@ Package.onUse(function(api) {
 
   api.use([
     'mongo',
+    'templating',
     'space:ui@5.2.0',
+    'space:cqrs-debug@0.2.0',
     'space:cqrs-shop-shared',
     'space:cqrs-shop-catalog',
   ]);
@@ -27,8 +29,15 @@ Package.onUse(function(api) {
 
   // SERVER ONLY
   api.addFiles([
-    'server/dev-seed-data.js'
+    'server/dev-seed-data.js',
+    'server/projections/products-projection.js',
   ], 'server');
+
+  // CLIENT ONLY
+  api.addFiles([
+    'client/views/head.html',
+    'client/views/layout.html'
+  ], 'client');
 
   api.export('Shop');
 

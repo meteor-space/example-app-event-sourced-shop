@@ -13,6 +13,7 @@ deps@1.0.7
 ejson@1.0.6
 fastclick@1.0.3
 fongandrew:find-and-modify@0.2.1
+fourseven:scss@3.1.1
 geojson-utils@1.0.3
 html-tools@1.0.4
 htmljs@1.0.4
@@ -32,6 +33,9 @@ mobile-status-bar@1.0.3
 mongo@1.1.0
 observe-sequence@1.0.6
 ordered-dict@1.0.3
+peerlibrary:assert@0.2.5
+peerlibrary:base-component@0.10.0
+peerlibrary:blaze-components@0.12.0
 random@1.0.3
 reactive-dict@1.1.0
 reactive-var@1.0.5
@@ -41,6 +45,7 @@ routepolicy@1.0.5
 session@1.1.0
 space:base@2.3.0
 space:cqrs@5.1.1
+space:cqrs-debug@0.2.0
 space:cqrs-shop-catalog@0.1.0
 space:cqrs-shop-shared@0.1.0
 space:cqrs-shop-ui@0.1.0

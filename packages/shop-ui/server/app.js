@@ -9,6 +9,10 @@ Shop = Space.Application.define('Shop', {
     commandBus: 'Space.messaging.CommandBus'
   },
 
+  Singletons: [
+    'Shop.ProductsProjection'
+  ],
+
   configure: function() {
     console.log('Shop app configured.');
   },
