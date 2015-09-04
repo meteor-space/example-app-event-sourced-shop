@@ -11,7 +11,8 @@ Package.onUse(function(api) {
   api.use([
     'mongo',
     'space:ui@5.2.0',
-    'space:cqrs-shop-catalog'
+    'space:cqrs-shop-shared',
+    'space:cqrs-shop-catalog',
   ]);
 
   // MODULES

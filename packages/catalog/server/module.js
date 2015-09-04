@@ -1,4 +1,4 @@
-Catalog = Space.Module.define('Catalog', {
+Space.Module.define('Catalog', {
 
   RequiredModules: ['Space.cqrs'],
 

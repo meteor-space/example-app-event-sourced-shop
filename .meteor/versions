@@ -39,9 +39,10 @@ reload@1.1.3
 retry@1.0.3
 routepolicy@1.0.5
 session@1.1.0
-space:base@2.2.0
-space:cqrs@5.1.0
+space:base@2.3.0
+space:cqrs@5.1.1
 space:cqrs-shop-catalog@0.1.0
+space:cqrs-shop-shared@0.1.0
 space:cqrs-shop-ui@0.1.0
 space:messaging@1.6.0
 space:ui@5.2.0

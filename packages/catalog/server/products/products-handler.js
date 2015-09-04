@@ -1,5 +1,13 @@
-Space.messaging.Controller.extend(Catalog, 'ProductsHandler')
+Space.messaging.Controller.extend(Catalog, 'ProductsHandler', {
+
+  Dependencies: {
+    repository: 'Space.cqrs.Repository'
+  }
+
+})
 
 .handle(Catalog.AddProduct, function(command) {
-  console.log(command);
+
+  product = new Catalog.Product(command.productId, command);
+
 });

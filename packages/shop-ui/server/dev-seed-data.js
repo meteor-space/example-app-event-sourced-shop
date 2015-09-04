@@ -7,6 +7,7 @@ if(process.env.NODE_ENV === 'development') {
 
       // Create some test data during development
       Shop.app.sendCommand(new Catalog.AddProduct({
+        productId: new Guid(),
         name: 'TestProduct',
         price: 10,
         previewUrl: "http://lorempixel.com/700/700/sports/1"
