@@ -1,7 +1,7 @@
 Package.describe({
-  name: 'space:cqrs-shop-inventory',
+  name: 'space:cqrs-shop-catalog',
   version: '0.1.0',
-  summary: 'Bounded context for the inventory of the example shop.',
+  summary: 'Bounded context for the catalog of the example shop.',
 });
 
 Package.onUse(function(api) {
@@ -19,6 +19,6 @@ Package.onUse(function(api) {
     'server/products/products-handler.js',
   ], 'server');
 
-  api.export('Inventory');
+  api.export('Catalog');
 
 });

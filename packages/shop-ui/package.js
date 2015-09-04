@@ -10,9 +10,8 @@ Package.onUse(function(api) {
 
   api.use([
     'mongo',
-    'space:messaging@1.5.2',
-    'space:ui@5.1.2',
-    'space:cqrs-shop-inventory'
+    'space:ui@5.2.0',
+    'space:cqrs-shop-catalog'
   ]);
 
   // MODULES

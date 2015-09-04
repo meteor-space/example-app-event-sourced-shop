@@ -2,7 +2,7 @@ Shop = Space.Application.define('Shop', {
 
   RequiredModules: [
     'Space.messaging',
-    'Inventory'
+    'Catalog'
   ],
 
   Dependencies: {
