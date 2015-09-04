@@ -7,7 +7,5 @@ Space.messaging.Controller.extend(Catalog, 'ProductsHandler', {
 })
 
 .handle(Catalog.AddProduct, function(command) {
-
-  product = new Catalog.Product(command.productId, command);
-
+  this.repository.save(new Catalog.Product(command.productId, command));
 });

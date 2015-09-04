@@ -15,5 +15,8 @@ Space.cqrs.Aggregate.extend(Catalog, 'Product', {
 })
 
 .handle(Catalog.ProductAdded, function(event) {
-  console.log(event);
+  this.addedAt = event.timestamp;
+  this.name = event.name;
+  this.price = event.price;
+  this.previewUrl = event.previewUrl;
 });
