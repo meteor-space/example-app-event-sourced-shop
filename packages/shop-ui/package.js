@@ -18,25 +18,25 @@ Package.onUse(function(api) {
   ]);
 
   // MODULES
-  api.addFiles(['server/app.js'], 'server');
-  api.addFiles(['client/app.js'], 'client');
+  api.addFiles(['source/server/app.js'], 'server');
+  api.addFiles(['source/client/app.js'], 'client');
 
   // SHARED
   api.addFiles([
-    'shared/collections/products.js',
-    'shared/startup.js'
+    'source/shared/collections/products.js',
+    'source/shared/startup.js'
   ]);
 
   // SERVER ONLY
   api.addFiles([
-    'server/dev-seed-data.js',
-    'server/projections/products-projection.js',
+    'source/server/dev-seed-data.js',
+    'source/server/projections/products-projection.js',
   ], 'server');
 
   // CLIENT ONLY
   api.addFiles([
-    'client/views/head.html',
-    'client/views/layout.html'
+    'source/client/views/head.html',
+    'source/client/views/layout.html'
   ], 'client');
 
   api.export('Shop');
