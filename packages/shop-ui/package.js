@@ -37,9 +37,10 @@ Package.onUse(function(api) {
 
   // CLIENT ONLY
   api.addFiles([
+    'source/client/styles/custom.semantic.json',
+    'source/client/styles/semantic.less',
     'source/client/views/head.html',
     'source/client/views/layout.html',
-    'source/client/styles/custom.semantic.json',
   ], 'client');
 
   api.export('Shop');
