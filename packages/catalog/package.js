@@ -11,14 +11,18 @@ Package.onUse(function(api) {
   api.use([
     'space:base@2.3.0',
     'space:cqrs@5.1.1',
-    'space:cqrs-shop-shared',
+    'space:value-objects',
   ]);
 
   // MODULES
   api.addFiles([
-    'server/module.js',
-    'server/products/product.js',
-    'server/products/products-handler.js',
+    'source/module.js',
+    'source/events.js',
+    'source/commands.js',
+    'source/products/product.js',
+    'source/products/products-handler.js',
   ], 'server');
+
+  api.export('Catalog');
 
 });

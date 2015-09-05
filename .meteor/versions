@@ -47,10 +47,10 @@ space:base@2.3.0
 space:cqrs@5.1.1
 space:cqrs-debug@0.2.0
 space:cqrs-shop-catalog@0.1.0
-space:cqrs-shop-shared@0.1.0
 space:cqrs-shop-ui@0.1.0
 space:messaging@1.6.0
 space:ui@5.2.0
+space:value-objects@0.1.0
 spacebars@1.0.6
 spacebars-compiler@1.0.6
 templating@1.1.1

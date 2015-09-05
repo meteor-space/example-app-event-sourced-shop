@@ -1,1 +1,0 @@
-Catalog = Space.namespace('Catalog');

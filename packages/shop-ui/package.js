@@ -13,7 +13,7 @@ Package.onUse(function(api) {
     'templating',
     'space:ui@5.2.0',
     'space:cqrs-debug@0.2.0',
-    'space:cqrs-shop-shared',
+    'space:value-objects',
     'space:cqrs-shop-catalog',
   ]);
 
