@@ -11,6 +11,8 @@ Package.onUse(function(api) {
   api.use([
     'mongo',
     'templating',
+    'semantic:ui@2.1.3',
+    'flemay:less-autoprefixer@1.1.0',
     'space:ui@5.2.0',
     'space:cqrs-debug@0.2.0',
     'space:value-objects',
@@ -36,7 +38,8 @@ Package.onUse(function(api) {
   // CLIENT ONLY
   api.addFiles([
     'source/client/views/head.html',
-    'source/client/views/layout.html'
+    'source/client/views/layout.html',
+    'source/client/styles/custom.semantic.json',
   ], 'client');
 
   api.export('Shop');
