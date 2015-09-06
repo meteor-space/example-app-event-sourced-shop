@@ -1,1 +1,1 @@
-Shop.products = new Mongo.Collection('shop_products');
+Shop.Products = new Mongo.Collection('shop_products');

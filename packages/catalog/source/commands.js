@@ -3,8 +3,10 @@ Space.messaging.define(Space.messaging.Command, 'Catalog', {
 
   AddProduct: {
     productId: Guid,
-    name: String,
-    price: Number,
+    title: String,
+    description: String,
+    category: String,
+    price: Money,
     previewUrl: String
   }
 

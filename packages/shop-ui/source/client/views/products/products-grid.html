@@ -1,0 +1,16 @@
+<template name="shop_products_grid">
+  <div class="ui grid">
+  {{#each products}}
+  <div class="four wide column">
+    <div class="ui fluid card">
+      <div class="image"><img src="{{previewUrl}}"></div>
+      <div class="content">
+        <div class="header">{{title}}</div>
+        <div class="meta">{{category}}</div>
+        <div class="description">{{description}}</div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+  </div>
+</template>

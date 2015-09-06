@@ -1,7 +1,7 @@
 Space.messaging.Controller.extend(Shop, 'ProductsProjection', {
 
   Dependencies: {
-    products: 'Shop.products'
+    products: 'Shop.Products'
   },
 
 })
@@ -9,7 +9,9 @@ Space.messaging.Controller.extend(Shop, 'ProductsProjection', {
 .on(Catalog.ProductAdded, function(event) {
   this.products.insert({
     _id: event.sourceId.toString(),
-    name: event.name,
+    title: event.title,
+    description: event.description,
+    category: event.category,
     price: event.price,
     previewUrl: event.previewUrl
   });

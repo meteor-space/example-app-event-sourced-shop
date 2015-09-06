@@ -37,10 +37,17 @@ Package.onUse(function(api) {
 
   // CLIENT ONLY
   api.addFiles([
+    // Stores
+    'source/client/stores/products-store.js',
+    // Styles
     'source/client/styles/custom.semantic.json',
     'source/client/styles/semantic.less',
+    // Layout
     'source/client/views/head.html',
     'source/client/views/layout.html',
+    // Components
+    'source/client/views/products/products-grid.html',
+    'source/client/views/products/products-grid.js',
   ], 'client');
 
   api.export('Shop');

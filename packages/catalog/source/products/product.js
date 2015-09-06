@@ -5,7 +5,9 @@ Space.cqrs.Aggregate.extend(Catalog, 'Product', {
     this.record(new Catalog.ProductAdded({
       sourceId: id,
       timestamp: new Date(),
-      name: data.name,
+      title: data.title,
+      description: data.description,
+      category: data.category,
       price: data.price,
       previewUrl: data.previewUrl
     }));
@@ -15,8 +17,5 @@ Space.cqrs.Aggregate.extend(Catalog, 'Product', {
 })
 
 .handle(Catalog.ProductAdded, function(event) {
-  this.addedAt = event.timestamp;
-  this.name = event.name;
-  this.price = event.price;
-  this.previewUrl = event.previewUrl;
+  // Assign data etc.
 });
